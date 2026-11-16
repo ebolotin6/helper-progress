@@ -1,0 +1,5 @@
+{
+  "name": "helper-progress",
+  "owner": { "name": "ebolotin6" },
+  "plugins": [{ "name": "helper-progress", "source": "./" }]
+}
