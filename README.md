@@ -29,6 +29,12 @@ claude plugin install helper-progress --marketplace ebolotin6/helper-progress
 
 Answer `y` to add the marketplace, then pick a scope. In the desktop app, where `/plugin` does not run: click + next to the prompt box, then Plugins, Add marketplace with `ebolotin6/helper-progress`, then Add plugin.
 
+To have it on in every session, pick the user scope, or add `--scope user` to the shell command:
+
+```bash
+claude plugin install helper-progress --marketplace ebolotin6/helper-progress --scope user
+```
+
 ## License
 
 MIT
