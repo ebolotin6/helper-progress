@@ -1,1 +1,1 @@
-{ "name": "helper-progress", "version": "0.1.0", "description": "A band above the prompt showing how many background helpers are done, and what each running one is doing.", "types": "./types/index.d.ts" }
+{ "name": "helper-progress", "version": "0.2.0", "description": "A band above the prompt showing how many background helpers are done, what each running one is doing, and a step counter for scripts that report one.", "types": "./types/index.d.ts" }

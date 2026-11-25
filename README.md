@@ -13,6 +13,23 @@ A Claude Code mod that shows what your background helpers (subagents) are doing,
 
 A helper has no known end point, so the wheel shows that it is working rather than a percentage.
 
+## Counters for your own scripts
+
+A script with known steps can show a counter in the same place:
+
+```
+⠹ Deploy · step 3 of 5 · building the changed servers · 0m 12s
+```
+
+It writes one small JSON file as it goes and deletes it when it ends:
+
+```bash
+mkdir -p /tmp/helper-progress
+echo '{"label":"Deploy","step":3,"of":5,"text":"building the changed servers","startedAt":'"$START"'}' > /tmp/helper-progress/deploy.json
+```
+
+`startedAt` is the start time in seconds (`date +%s`). A file left untouched for 15 minutes is ignored.
+
 ## Install
 
 At the prompt of a Claude Code terminal session:
